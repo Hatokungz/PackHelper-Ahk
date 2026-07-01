@@ -7,3 +7,7 @@ So I got to know AutoHotkeys, with this I can compress several process into just
 - Left (<=), Right (=>) arrow: To select between each package barcode.
 - Spacebar: To send input package barcode and close the sale.
 - Q: To change packing wave paper.
+- Alt+P: To automate sending Tax Invoice printing.
+
+Note -If spacebar key won't work reset via Esc, Enter, F7
+git
