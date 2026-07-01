@@ -9,6 +9,7 @@
 
 #Include HotKeys\barcodeInsert.ahk
 #Include HotKeys\changeWave.ahk
+#Include HotKeys\autoSendPrinter.ahk
 
 Main.start()
 
@@ -18,6 +19,7 @@ class Main {
         BarcodePicker.Load()
         BarcodeInserter.Setkeys()
         ChangeWave.SetKeys()
+        AutoSendPrinter.SetKeys()
 
         InfoGui.Update()
     }

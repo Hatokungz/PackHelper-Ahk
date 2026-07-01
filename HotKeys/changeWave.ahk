@@ -8,9 +8,9 @@ class ChangeWave {
 
     static Activate() {
 
-        t := 3000
+        t := 1500
 
-        SendList(["^a", "{backspace}", "{enter}", "{F3}", "{F2}"])
+        SendList(["^a", "{backspace}", "{enter}", "{F3}", "{F2}"], t*0.2)
 
     }
 

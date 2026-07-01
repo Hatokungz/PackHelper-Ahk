@@ -3,6 +3,7 @@
 class BarcodeInserter {
 
     static triggered := false
+    static penddingEnter := false
 
     static Setkeys() {
         Hotkey("~$Space", (*) => this.Insert())
@@ -34,8 +35,14 @@ class BarcodeInserter {
     }
 
     static Reset() {
-        if this.triggered
+        if this.penddingEnter
+            this.penddingEnter := false
+
+        if this.triggered {
             this.triggered := false
+            this.penddingEnter := true
+            SetTimer(() => this.SendEnter(), -6000)
+        }
     }
 
     static Next() {
@@ -46,6 +53,13 @@ class BarcodeInserter {
     static Previous() {
         BarcodePicker.Previous()
         InfoGui.Update()
+    }
+
+    static SendEnter() {
+        if !this.penddingEnter
+            return
+
+        Send("{Enter}")
     }
 
 }
