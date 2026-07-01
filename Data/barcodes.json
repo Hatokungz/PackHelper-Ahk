@@ -1,0 +1,38 @@
+[
+    {
+        "code": "1",
+        "name": "กล่อง SS"
+    },
+    {
+        "code": "2",
+        "name": "กล่อง S"
+    },
+    {
+        "code": "3",
+        "name": "กล่อง S+"
+    },
+    {
+        "code": "4",
+        "name": "กล่อง M"
+    },
+    {
+        "code": "5",
+        "name": "ถุง S"
+    },
+    {
+        "code": "6",
+        "name": "ถุง M"
+    },
+    {
+        "code": "7",
+        "name": "กล่อง S Offline"
+    },
+    {
+        "code": "8",
+        "name": "กล่อง M Offline"
+    },
+    {
+        "code": "9",
+        "name": "กล่อง L Offline"
+    }
+]
