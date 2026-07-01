@@ -8,6 +8,7 @@
 #Include Features\infoGui.ahk
 
 #Include HotKeys\barcodeInsert.ahk
+#Include HotKeys\changeWave.ahk
 
 Main.start()
 
@@ -16,6 +17,7 @@ class Main {
     static start() {
         BarcodePicker.Load()
         BarcodeInserter.Setkeys()
+        ChangeWave.SetKeys()
 
         InfoGui.Update()
     }
